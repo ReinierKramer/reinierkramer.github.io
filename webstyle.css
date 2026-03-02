@@ -18,7 +18,7 @@
 	width: 75%;
 	float: right;
 	transform: translate(-12.5%,0);
-  overflow: hidden;
+  	overflow: hidden;
 	padding: 4pt 0pt;
 	text-align: center;
 	font-family: Helvetica, Arial, sans-serif;
@@ -68,10 +68,10 @@
 .footer {
 	display: block;
 	clear: both;
-	position: fixed;
-	bottom: 0pt;
-	left: 0;
- height: 36pt;
+	position: static;
+/*	bottom: 0pt;
+	left: 0; */
+ 	height: 36pt;
 	width: 100%;
 	background-color: #FFFFFF;
 	text-align: center;
@@ -95,10 +95,10 @@
 	padding-top: 50pt;
 	margin-left: 10%;
 	margin-right: 10pt;
- overflow: hidden;
+ 	overflow: hidden;
 	font-family: Helvetica, Arial, sans-serif;
- font-variant-numeric: oldstyle-nums;
- font-weight: 300;
+ 	font-variant-numeric: oldstyle-nums;
+ 	font-weight: 300;
 	-moz-font-feature-settings: "onum";
   -webkit-font-feature-settings: "onum";
   font-feature-settings: "onum";

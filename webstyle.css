@@ -189,16 +189,6 @@
 	/* height: 100% */
 }
 
-/* The page titles should be fixed */
-.page-title{
-	position: static;
-	top: 0pt;
-	left: 0pt;
-	display: block;
-	width: 100%;
-	background-color: #FFFFFF;
-}
-
 /* For the home page: a left column for text and a right column for an image */
 .left-column {
 	position: relative;
@@ -224,25 +214,6 @@
  width: 50%;
  float: right;
  height: 100%;
-}
-
-/* Split page titles for two columns */
-.page-title-left{
-	position: absolute;
-	top: 0pt;
-	left: 0pt;
-	display: block;
-	width: 50%;
-	background-color: #FFFFFF;
-}
-
-.page-title-right{
-	position: absolute;
-	top: 0pt;
-	right: 0pt;
-	display: block;
-	width: 50%;
-	background-color: #FFFFFF;
 }
 
 /* Responsive: if the screen is less than 1000px wide, topname and topnav stack. central moves along. The image becomes a slightly larger portion of the screen.*/

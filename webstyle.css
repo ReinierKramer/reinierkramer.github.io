@@ -68,9 +68,9 @@
 .footer {
 	display: block;
 	clear: both;
-	position: static;
-/*	bottom: 0pt;
-	left: 0; */
+	position: fixed;
+	bottom: 0pt;
+	left: 0;
  	height: 36pt;
 	width: 100%;
 	background-color: #FFFFFF;

@@ -89,7 +89,7 @@
 /* The central container*/
 .central {
 	position: fixed;
-	top: 36pt;
+	top: 40pt;
 	bottom: 0pt;
 	display: block;
 	margin-left: 10%;

@@ -4,7 +4,7 @@
 	top: 0;
 	width: 100%;
 	clear: both;
-	padding: 15pt 0pt;
+	padding: 15pt 0pt 5pt;
 	overflow: hidden;
 	background-color: #FFFFFF;
 	display: block;
@@ -89,7 +89,7 @@
 /* The central container*/
 .central {
 	position: fixed;
-	top: 45pt;
+	top: 35pt;
 	bottom: 0pt;
 	display: block;
 	margin-left: 10%;

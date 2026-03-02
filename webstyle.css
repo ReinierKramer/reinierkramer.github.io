@@ -70,7 +70,6 @@
 	clear: both;
 	position: sticky;
 	bottom: 0pt;
-	margin-top: auto
 /*	left: 0; */
  	height: 36pt;
 	width: 100%;
@@ -91,8 +90,8 @@
 .central {
 	position: fixed;
 	top: 35pt;
-	display: flex;
-	flex-direction: column;
+	bottom: 0pt;
+	display: block;
 	margin-left: 10%;
 	margin-right: 10pt;
  	overflow: auto;

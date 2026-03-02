@@ -32,19 +32,19 @@
 
 /* Navbar links */
 .topnav a {
-  color: #FF0000;
+  color: #B30000;
   padding: 10pt 12pt;
   text-decoration: none;
 }
 
 /* Navbar links - change color when visited */
 .topnav a:visited {
-  color: #FF9900;
+  color: #663300;
 }
 
 /* Navbar links - change color on hover */
 .topnav a:hover {
-  color: #00FF00;
+  color: #330000;
 }
 
 /* My name on the left */ 
@@ -184,7 +184,8 @@
 .text {
 	display: block;
 	/* overflow: auto; */
-	margin-right: 10%;
+	margin-left: 5%;
+	margin-right: 15%;
 	/* height: 100% */
 }
 
@@ -200,19 +201,6 @@
 	position: relative;
 	width: 40%;
 	float: right;
-}
-
-/* For a symmetric two-column layout, e.g. for conferences and seminars */
-.sym-column-left{
- width: 50%;
- float: left;
- height: 100%;
-}
-
-.sym-column-right{
- width: 50%;
- float: right;
- height: 100%;
 }
 
 /* Responsive: if the screen is less than 1000px wide, topname and topnav stack. central moves along. The image becomes a slightly larger portion of the screen.*/
@@ -275,7 +263,7 @@
 	}
 }
 
-/*Responsive: if the screen is less than 600px wide and in portrait mode, the symmetric left and right columns get stacked as well. Moreover, margins get smaller*/
+/*Responsive: if the screen is less than 600px wide and in portrait mode, the margins get smaller*/
 @media only screen and (max-width: 600px ) and (orientation: portrait) {
  
   .central{
@@ -286,23 +274,4 @@
   .text{
    margin-right: 0pt;
   }
-  
-  .page-title-left{
-  position: absolute;
-  top: 0pt;
-  left: 0pt;
-  display: block;
-  width: 100%;
-  background-color: #FFFFFF;
- }
- 
- .page-title-right{
-  position: static;
-  width: 100%;
- }
- 
- .sym-column-left,.sym-column-right{
- width: 100%;
- height: 50%;
-}
 }

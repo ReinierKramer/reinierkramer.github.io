@@ -27,7 +27,6 @@
 	font-variant: normal;
 	font-weight: 300;
 	line-height: 15pt;
-	font-variant-numeric: oldstyle-nums;
 }
 
 /* Navbar links */
@@ -61,7 +60,6 @@
 	font-style: normal;
 	font-weight: 200;
 	line-height: 21pt;
-	font-variant-numeric: oldstyle-nums;
 }
 
 /* The footer container */
@@ -82,7 +80,6 @@
 	font-variant: normal;
 	font-weight: 200;
 	line-height: 12pt;
-	font-variant-numeric: oldstyle-nums;
 }
 
 
@@ -96,11 +93,7 @@
 	margin-right: 10pt;
  	overflow: auto;
 	font-family: Helvetica, Arial, sans-serif;
- 	font-variant-numeric: oldstyle-nums;
  	font-weight: 300;
-	-moz-font-feature-settings: "onum";
-  -webkit-font-feature-settings: "onum";
-  font-feature-settings: "onum";
 	clear: both;
 }
 

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'>
+			MathJax.Hub.Config({ 
+				tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+				TeX: {
+					Macros: {
+					R: "{\\mathbb{R}}",
+					}
+				}
+				}); 
+		</script>
+
+
+		<title>RK - Papers</title>
+		<link rel="icon" href="./Images/RK.png">
+	
+		<link rel="stylesheet" type="text/css" href="webstyle.css">
+	
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<STYLE>
+			<!--
+			A{text-decoration:none}
+			-->
+		</STYLE>
+	</head>
+  
+  
+	<body>
+      
+		<!--Navigation bar-->
+			<div id="nav-placeholder">
+
+			</div>
+
+			<script>
+				$(function(){
+			    $("#nav-placeholder").load("menu");
+			    });
+			</script>
+		<!--end of Navigation bar-->
+
+		<div class="central">
+			
+			<div class="page-title">
+				<h1>
+					Mathematical output
+				</h1>
+			</div>
+				
+			<div class="text">
+				
+				<p>
+					This page contains all of my completed original mathematical output, along with a few theses. My published papers can also be found on <a href="https://mathscinet.ams.org/mathscinet/search/author.html?mrauthid=1245081">MathSciNet</a> and <a href="https://zbmath.org/authors/?q=Kramer%2C+Reinier">zbMATH Open</a>. My preprints can all be found on <a href="https://arxiv.org/search/?query=Kramer%2C+Reinier&searchtype=author&source=header">arXiv</a>.
+				</p>
+		
+				<h2>
+					Preprints
+				</h2>
+		
+				<p>
+					These have been, or will soon be, submitted for publication.
+				</p>
+		
+				<ul>
+					<li><a href="https://arxiv.org/abs/2511.17320">Superconformal topological recursion</a>, joint with N. Aghaei, N. Orantin, and K. Osuga.</li>
+				</ul>
+				
+				<h2>
+					Journal papers
+				</h2>
+		
+				<ul>
+					<li><a href="https://doi.org/10.1007/s00220-025-05448-6">Highest weight vectors, shifted topological recursion and quantum curves</a>, joint with R. Belliard, V. Bouchard, and T. Nelson. <i>Communications in Mathematical Physics</i> <b>406</b> (2025), no. 11, 71pp.</li>
+					<li><a href="https://doi.org/10.1007/s00029-025-01077-y">A new spin on Hurwitz theory and ELSV via theta characteristics</a>, joint with A. Giacchetto and D. Lewa&nacute;ski. <i>Selecta Mathematica (New Series)</i> <b>31</b> (2025), art. no 90, 83pp.</li>
+					<li><a href="https://doi.org/10.1112/jlms.70286">Taking limits in topological recursion</a>, joint with G. Borot, V. Bouchard, N.K. Chidambaram, and S. Shadrin. <i>Journal of the London Mathematical Society</i> <b>112</b> (2025), no 3, 104pp.</li>
+					<li><a href="https://doi.org/10.4171/JEMS/1588">The Spin Gromov&ndash;Witten/Hurwitz correspondence for $\mathbb{P}^1$</a>, joint with A. Giacchetto, D. Lewa&nacute;ski, and A. Sauvaget. <i>Journal of the European Mathematical Society</i> (2025), published online first. Extra computations can be found <a href="https://drive.google.com/file/d/1j_yXgg8o3QM7oOkCbr7FeGHBodAPY4rv/view">here</a>.</li>
+					<li><a href="https://doi.org/10.1016/j.geomphys.2024.105306">Topological recursion on transalgebraic spectral curves and Atlantes Hurwitz numbers</a>, joint with V. Bouchard and Q. Weller. <i>Journal of Geometry and Physics</i> <b>206</b> (2024), 105306.</li>
+					<li><a href="https://doi.org/10.4171/AIHPD/168">Higher Airy structures and topological recursion for singular spectral curves</a>, joint with G. Borot and Y. Sch&uuml;ler. <i>Annales de l'Institut Henri Poincar&eacute; D: Combinatorics, Physics and their Interactions</i> <b>11</b> (2024), no. 1, 1&ndash;146.</li>
+					<li><a href="https://doi.org/10.24033/asens.2553">Loop equations and a proof of Zvonkine&rsquo;s $qr$-ELSV formula</a>, joint with P. Dunin-Barkowski, A. Popolitov, and S. Shadrin. <i>Annales Scientifiques de l'&Eacute;cole Normale Sup&eacute;rieure</i> <b>56</b> (2023), no. 4, 1199&ndash;1229.</li>
+					<li><a href="https://doi.org/10.4310/CNTP.2023.v17.n2.a1">KP hierarchy for Hurwitz-type cohomological field theories</a>. <i>Communications in Number Theory and Physics</i> <b>17</b> (2023), no. 2, 249&ndash;291.</li>
+					<li><a href="https://doi.org/10.2422/2036-2145.201909_010">Topological recursion for monotone orbifold Hurwitz numbers: a proof of the Do-Karev conjecture</a>, joint with A. Popolitov and S. Shadrin. <i>Annali della Scuola Normale Superiore di Pisa, Classe di Scienze. Serie V</i> <b>23</b> (2022), no. 2, 809&ndash;827.</li>
+					<li><a href="https://doi.org/10.1307/mmj/1592877614">Special cases of the orbifold version of Zvonkine&rsquo;s $r$-ELSV formula</a>, joint with G. Borot, D. Lewa&nacute;ski, A. Popolitov, and S. Shadrin. <i>Michigan Mathematical Journal</i> <b>70</b> (2021), no. 2, 369&ndash;402.</li>
+					<li><a href="https://doi.org/10.1063/1.5116655">Stimulated Raman adiabatic passage-like protocols for amplitude transfer generalize to many bipartite graphs</a>, joint with K. Groenland and C. Groenland. <i>Journal of Mathematical Physics</i> <b>61</b> (2020), 072201.</li>
+					<li><a href="https://doi.org/10.1090/tran/7793">Towards an orbifold generalization of Zvonkine&rsquo;s $r$-ELSV formula</a>, joint with D. Lewa&nacute;ski, A. Popolitov, and S. Shadrin. <i>Transactions of the American Mathematical Society</i> <b>372</b> (2019), no. 6, 4447&ndash;4469.</li>
+					<li><a href="https://doi.org/10.3842/SIGMA.2019.080">Half-spin tautological relations and Faber&rsquo;s proportionalities of kappa classes</a>, joint with E. Garcia Failde, D. Lewa&nacute;ski, and S. Shadrin. <i>Symmetry, Integrability and Geometry: Methods and Applications (SIGMA)</i> <b>15</b> (2019), paper no. 080,  27pp.</li>
+					<li><a href="https://doi.org/10.25537/dm.2019v24.857-898">Quasi-polynomiality of monotone orbifold Hurwitz numbers and Grothendieck&rsquo;s dessins d&rsquo;enfants</a>, joint with D. Lewa&nacute;ski and S. Shadrin. <i>Documenta Mathematica</i> <b>24</b> (2019), 857&ndash;898.</li>
+					<li><a href="https://doi.org/10.1016/j.geomphys.2018.11.010"> Cut-and-join equation for monotone Hurwitz numbers revisited</a>, joint with P. Dunin-Barkowski, A. Popolitov, and S. Shadrin. <i>Journal of Geometry and Physics</i> <b>137</b> (2019), 1&ndash;6.</li>
+					<li><a href="https://doi.org/10.14231/AG-2018-019">The tautological ring of $\mathcal{M}_{g,n}$ via Pandharipande-Pixton-Zvonkine $r$-spin relations</a>, joint with F. Labib, D. Lewa&nacute;ski, and S. Shadrin. <i>Algebraic Geometry</i> <b>5</b> (2018), no. 6, 703&ndash;727.</li>
+					<li><a href="https://doi.org/10.1016/j.aim.2018.07.028">Wall-crossing formulae and strong piecewise polynomiality for mixed Grothendieck dessins d&rsquo;enfant, monotone, and simple double Hurwitz numbers</a>, joint with M.A. Hahn and D. Lewa&nacute;ski. <i>Advances in Mathematics</i> <b>336</b> (2018), 38&ndash;69.</li>
+					<li><a href="https://doi.org/10.5802/jep.66">Central invariants revisited</a>, joint with G. Carlet and S. Shadrin. <i>J. &#201;cole polytechnique &ndash; Math&#233;matiques</i> <b>5</b> (2018), 149&ndash;175.</li>
+				</ul>
+			
+				<h2>
+					Theses
+				</h2>
+		
+				<p>
+					<a href="./pdf/PhDthesis.pdf">Cycles of curves, cover counts, and central invariants</a>, PhD dissertation, promotor S. Shadrin, copromotor G. Carlet, Universiteit van Amsterdam.
+				</p>
+				<p>
+					<a href="./pdf/MScThesis.pdf">The Madsen-Weiss theorem</a>, master thesis, supervised by S. Shadrin, Universiteit van Amsterdam.
+				</p>
+				<p>
+					<a href="./pdf/PartIIIEssay.pdf">K&#228;hler-Einstein metrics (following Berman)</a>, Part III essay, supervised by J. Ross, University of Cambridge.
+				</p>
+		
+			</div>
+			
+		</div>
+		
+
+		<!--Footer-->
+			<div id="footer-placeholder">
+
+			</div>
+
+			<script>
+				$(function(){
+				$("#footer-placeholder").load("footer");
+				});
+			</script>
+		<!--end of Footer-->
+	  
+    </body>
+</html>

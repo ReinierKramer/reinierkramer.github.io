@@ -1,0 +1,15 @@
+<div class="footer">
+	<div style="margin-left:auto;margin-right:auto;max-width:480px;height:36pt">
+		<div style="bottom:0;float:left;height:36pt;width:90px">
+			<img src="Images/Fietstekening.svg" alt="My bike. Credits to R. Rens." title="My bike. Credits to R. Rens." width="80px" height="48px">
+		</div>
+		<div style="display: inline-block;margin:auto;max-width:300px;text-align: center;padding:12pt 0;">
+			<i>Last updated: 23rd of February, 2026.</i>
+		</div>
+		<div style="float:right;height:36pt;width:90px;display:flex;align-items: center;">
+			<img src="Images/Dessin.png" alt="Dessin d'enfant from my defense invitation. Credits to R. Rens." title="Dessin d'enfant from my defense invitation. Credits to R. Rens." style="width:90px;height:auto;">
+		</div>
+	</div>
+</div>
+
+<!-- Recall that 4px = 3pt, and that width and height in HTML (in contrast to CSS) do not take pt -->

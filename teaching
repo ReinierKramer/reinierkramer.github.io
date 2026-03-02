@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'>
+			MathJax.Hub.Config({ 
+				tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+				TeX: {
+					Macros: {
+				    R: "{\\mathbb{R}}",
+					}
+				}
+			}); 
+		</script>
+
+
+		<title>RK - Teaching</title>
+		<link rel="icon" href="./Images/RK.png">
+		
+		<link rel="stylesheet" type="text/css" href="webstyle.css">
+		
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		    
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<STYLE>
+			<!--
+			A{text-decoration:none}
+			-->
+		</STYLE>
+	</head>
+  
+  
+    <body>
+      
+		<!--Navigation bar-->
+			<div id="nav-placeholder">
+
+			</div>
+
+			<script>
+				$(function(){
+				$("#nav-placeholder").load("menu");
+				});
+			</script>
+		<!--end of Navigation bar-->
+
+    
+		<div class="central">
+			
+			<div class="page-title">
+				<h1>
+					Teaching
+				</h1>
+			</div>
+		
+			<div class="text">				
+				<p>
+					In Fall 2024 and Fall 2025, I was in charge of Mathematical methods for the Laurea Magistrale Materials Science. In Spring 2025 and Spring 2026, I lead part of the exercise classes of Sistemi Dinamici e Meccanica Classica for the Laurea Matematica.
+				</p>
+
+				<h3>
+					Teaching experience in Alberta
+				</h3>
+
+				<p>
+					My teaching profile at the University of Alberta can be found <a href="https://apps.ualberta.ca/catalogue/instructor/reinier">here</a>. I lectured the following courses:
+					<ul>
+						<li>MATH 146 - Calculus for the Mathematical and Physical Sciences II, Winter 2024.</li>
+						<li>MA PH 464 - Group Theory in Physics, Winter 2023. <a href="./pdf/MA_PH_464_Notes.pdf">Lecture notes</a>.</li>
+						<li>MA PH 464 - Group Theory in Physics, Winter 2022.</li>
+					</ul>
+				</p>
+
+
+				<h3>
+					Teaching experience in Amsterdam
+				</h3>
+
+				<p>
+					These are the courses I have been a teaching assistant for in Amsterdam.
+					<ul>
+						<li>Lineaire algebra, Fall 2018. Lectured by <a href="https://sites.google.com/site/guusregts/">Guus Regts</a>.</li>
+				      	<li><a href="https://staff.fnwi.uva.nl/l.d.j.taelman/teaching.html">Modulen en Categorie&#235;n</a>, Spring 2018. Lectured by <a href="https://staff.fnwi.uva.nl/l.d.j.taelman/">Lenny Taelman</a>.</li>
+						<li>Workshop wiskunde, Fall 2017. Coordinated by <a href="http://www.uva.nl/en/profile/z/a/c.g.zaal/c.g.zaal.html">Chris Zaal</a>.</li>
+						<li>Lie Groups and Lie Algebras, Spring 2017. Lectured by <a href="https://staff.fnwi.uva.nl/j.v.stokman/">Jasper Stokman</a> and <a href="https://staff.fnwi.uva.nl/e.m.opdam/">Eric Opdam</a>.</li>
+						<li>Representatietheorie, Fall 2016. Lectured by <a href="https://staff.fnwi.uva.nl/j.v.stokman/"> Jasper Stokman</a>.</li>
+						<li><a href="https://staff.fnwi.uva.nl/h.b.posthuma/rs.html">Riemann Surfaces</a>, Spring 2016. Lectured by <a href="https://staff.fnwi.uva.nl/h.b.posthuma/">Hessel Posthuma</a>.</li>
+						<li>Wiskunde N3, Fall 2015. Lectured by <a href="http://www.uva.nl/en/profile/p/e/h.peters/h.peters.html">Han Peters</a>.</li>
+						<li>Functietheorie, Spring 2015. Lectured by <a href="http://www.uva.nl/en/profile/p/e/h.peters/h.peters.html">Han Peters</a>.</li>
+						<li>Representatietheorie, Fall 2014. Lectured by <a href="https://staff.fnwi.uva.nl/e.m.opdam/">Eric Opdam</a>.</li>
+						<li>Stochastiek 2, Fall 2012. Lectured by <a href="https://staff.fnwi.uva.nl/c.a.j.klaassen/">Chris Klaassen</a>.</li>
+						<li>Basiswiskunde, Fall 2012. Lectured by <a href="https://www.bliggy.net/">Gerrit Oomens</a>.</li>
+					</ul>
+				</p>
+			
+				<p>
+					Furthermore, I supervised two second-year projects in Amsterdam.
+					<ul>
+						<li><i>Dessins d'enfants op riemann-oppervlakken tellen</i>, by Lars van Geest and Khallil Berrekkal (2018).</li>
+						<li><i>Korteweg-de vriesvergelijking</i>, by Hidde Schenk and Abe ten Voorde (2017).</li>
+					</ul>
+				</p>
+			
+			</div>
+			
+		</div>
+		
+		<!--Footer-->
+			<div id="footer-placeholder">
+
+			</div>
+
+			<script>
+			  $(function(){
+			  $("#footer-placeholder").load("footer");
+			  });
+			</script>
+		<!--end of Footer-->
+    </body>
+</html>

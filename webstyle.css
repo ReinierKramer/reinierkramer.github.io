@@ -191,7 +191,7 @@
 
 /* The page titles should be fixed */
 .page-title{
-	position: absolute;
+	position: static;
 	top: 0pt;
 	left: 0pt;
 	display: block;

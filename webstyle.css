@@ -32,19 +32,19 @@
 
 /* Navbar links */
 .topnav a {
-  color: #B30000;
+  color: #CC0000;
   padding: 10pt 12pt;
   text-decoration: none;
 }
 
 /* Navbar links - change color when visited */
 .topnav a:visited {
-  color: #663300;
+  color: #B37700;
 }
 
 /* Navbar links - change color on hover */
 .topnav a:hover {
-  color: #330000;
+  color: #990000;
 }
 
 /* My name on the left */ 

@@ -17,9 +17,9 @@
 
 
 		<title>RK - Teaching</title>
-		<link rel="icon" href="./Images/RK.png">
+		<link rel="icon" href="{{ site.baseurl }}/Images/RK.png">
 		
-		<link rel="stylesheet" type="text/css" href="webstyle.css">
+		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/webstyle.css">
 		
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 		    
@@ -42,7 +42,7 @@
 
 			<script>
 				$(function(){
-				$("#nav-placeholder").load("menu/");
+				$("#nav-placeholder").load("{{ site.baseurl }}/menu/");
 				});
 			</script>
 		<!--end of Navigation bar-->
@@ -69,7 +69,7 @@
 					My teaching profile at the University of Alberta can be found <a href="https://apps.ualberta.ca/catalogue/instructor/reinier">here</a>. I lectured the following courses:
 					<ul>
 						<li>MATH 146 - Calculus for the Mathematical and Physical Sciences II, Winter 2024.</li>
-						<li>MA PH 464 - Group Theory in Physics, Winter 2023. <a href="./pdf/MA_PH_464_Notes.pdf">Lecture notes</a>.</li>
+						<li>MA PH 464 - Group Theory in Physics, Winter 2023. <a href="{{ site.baseurl }}/pdf/MA_PH_464_Notes.pdf">Lecture notes</a>.</li>
 						<li>MA PH 464 - Group Theory in Physics, Winter 2022.</li>
 					</ul>
 				</p>
@@ -115,7 +115,7 @@
 
 			<script>
 			  $(function(){
-			  $("#footer-placeholder").load("footer/");
+			  $("#footer-placeholder").load("{{ site.baseurl }}/footer/");
 			  });
 			</script>
 		<!--end of Footer-->

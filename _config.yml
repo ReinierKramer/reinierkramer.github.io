@@ -7,6 +7,8 @@ url: "" # Your site's final URL
 # Clean URLs (Removes .html from links)
 permalink: /:basename/
 
+baseurl: ""  # Keep empty if your site is at username.github.io
+
 # Tell Jekyll to include specific folders if needed
 include:
   - .htaccess

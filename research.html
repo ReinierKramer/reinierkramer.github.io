@@ -17,9 +17,9 @@
 
 
 		<title>RK - Research</title>
-		<link rel="icon" href="./Images/RK.png">
+		<link rel="icon" href="{{ site.baseurl }}/Images/RK.png">
 		
-		<link rel="stylesheet" type="text/css" href="webstyle.css">
+		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/webstyle.css">
 		
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 		
@@ -42,7 +42,7 @@
 
 			<script>
 				$(function(){
-				$("#nav-placeholder").load("menu/");
+				$("#nav-placeholder").load("{{ site.baseurl }}/menu/");
 				});
 			</script>
 		<!--end of Navigation bar-->
@@ -58,7 +58,7 @@
 			<div class="text">
 				
 				<p>
-					My main interests are on the mathematical side of mathematical physics, or more aptly in physical mathematics. These include, but are not necessarily limited to, topological (Chekhov&ndash;Eynard&ndash;Orantin) recursion, moduli spaces of curves, Hurwitz numbers, integrable hierarchies, and their interconnections and relations to representation theory. As an important tool, I use symmetric function theory, or Fock space formalism. For a concise overview of the relations between these topics, print and assemble <a href="./pdf/SimpSpace.pdf">this simplicial space</a>, an updated version of one I made for my PhD defense.
+					My main interests are on the mathematical side of mathematical physics, or more aptly in physical mathematics. These include, but are not necessarily limited to, topological (Chekhov&ndash;Eynard&ndash;Orantin) recursion, moduli spaces of curves, Hurwitz numbers, integrable hierarchies, and their interconnections and relations to representation theory. As an important tool, I use symmetric function theory, or Fock space formalism. For a concise overview of the relations between these topics, print and assemble <a href="{{ site.baseurl }}/pdf/SimpSpace.pdf">this simplicial space</a>, an updated version of one I made for my PhD defense.
 				</p>
 				
 				<p>
@@ -95,7 +95,7 @@
 
 		    <script>
 				$(function(){
-				$("#footer-placeholder").load("footer/");
+				$("#footer-placeholder").load("{{ site.baseurl }}/footer/");
 				 });
 		    </script>
 		<!--end of Footer-->

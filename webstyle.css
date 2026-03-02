@@ -69,8 +69,8 @@
 	display: block;
 	clear: both;
 	position: static;
-	bottom: 0pt;
-	left: 0;
+/*	bottom: 0pt;
+	left: 0; */
  	height: 36pt;
 	width: 100%;
 	background-color: #FFFFFF;
@@ -95,7 +95,7 @@
 	padding-top: 50pt;
 	margin-left: 10%;
 	margin-right: 10pt;
- 	overflow: hidden;
+ 	overflow: auto;
 	font-family: Helvetica, Arial, sans-serif;
  	font-variant-numeric: oldstyle-nums;
  	font-weight: 300;

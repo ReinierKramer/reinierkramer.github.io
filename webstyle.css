@@ -184,9 +184,9 @@
 /* The margins for the actual text blocks*/
 .text {
 	display: block;
-	overflow: auto;
+	/* overflow: auto; */
 	margin-right: 10%;
-	height: 100%
+	/* height: 100% */
 }
 
 /* The page titles should be fixed */

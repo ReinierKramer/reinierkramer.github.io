@@ -66,9 +66,10 @@
 .footer {
 	display: block;
 	clear: both;
-	position: static;
-/*	bottom: 0pt;
-	left: 0; */
+	margin-top: auto;
+	position: sticky;
+	bottom: 0pt;
+/*	left: 0; */
  	height: 36pt;
 	width: 100%;
 	background-color: #FFFFFF;
@@ -88,7 +89,9 @@
 	position: fixed;
 	top: 35pt;
 	bottom: 0pt;
-	display: block;
+	display: flex;
+  	flex-direction: column;
+  	overflow-y: auto;
 	margin-left: 10%;
 	margin-right: 10pt;
  	overflow: auto;
@@ -171,6 +174,10 @@
 /* selected link */
 .central a:active {
     color: #0000FF;
+}
+
+.content {
+  flex: 1 0 auto; /* Ensures content takes up available space but doesn't shrink */
 }
 
 /* The margins for the actual text blocks*/

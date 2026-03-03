@@ -203,8 +203,8 @@
 	float: right;
 }
 
-/* Responsive: if the screen is less than 1000px wide, topname and topnav stack. central moves along. The image becomes a slightly larger portion of the screen.*/
-@media only screen and (max-width: 1000px) {
+/* Responsive: if the screen is less than 900px wide, topname and topnav stack. central moves along. The image becomes a slightly larger portion of the screen.*/
+@media only screen and (max-width: 900px) {
  .header {
     padding-bottom: 0pt;
  }

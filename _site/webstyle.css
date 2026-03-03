@@ -1,0 +1,277 @@
+ /* The header container */
+ .header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	clear: both;
+	padding: 15pt 0pt 5pt;
+	overflow: hidden;
+	background-color: #FFFFFF;
+	display: block;
+	z-index: 1;
+ }
+ 
+ /* The navbar container */
+.topnav {
+	position: relative;
+	display: block;
+	width: 75%;
+	float: right;
+	transform: translate(-12.5%,0);
+  	overflow: hidden;
+	padding: 4pt 0pt;
+	text-align: center;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 15pt;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	line-height: 15pt;
+}
+
+/* Navbar links */
+.topnav a {
+  color: #CC0000;
+  padding: 10pt 12pt;
+  text-decoration: none;
+}
+
+/* Navbar links - change color when visited */
+.topnav a:visited {
+  color: #FF9933;
+}
+
+/* Navbar links - change color on hover */
+.topnav a:hover {
+  color: #990000;
+}
+
+/* My name on the left */ 
+.topname {
+	display: block;
+	position: relative;
+	float: left;
+  	overflow: hidden;
+	width: 25%;
+	float: left;
+	font-family: "Stempel Garamond LT Pro", Helvetica, Arial, sans-serif;
+	font-size: 21pt;
+	font-variant: normal;
+	font-style: normal;
+	font-weight: 200;
+	line-height: 21pt;
+}
+
+/* The footer container */
+.footer {
+	display: block;
+	clear: both;
+	margin-top: auto;
+	position: sticky;
+	bottom: 0pt;
+/*	left: 0; */
+ 	height: 36pt;
+	width: 100%;
+	background-color: #FFFFFF;
+	text-align: center;
+	overflow: hidden;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12pt;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 200;
+	line-height: 12pt;
+}
+
+
+/* The central container*/
+.central {
+	position: fixed;
+	top: 35pt;
+	bottom: 0pt;
+	display: flex;
+  	flex-direction: column;
+  	overflow-y: auto;
+	margin-left: 10%;
+	margin-right: 10pt;
+ 	overflow: auto;
+	font-family: Helvetica, Arial, sans-serif;
+ 	font-weight: 300;
+	clear: both;
+}
+
+.central body {
+	font-size: 12pt;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 200;
+	line-height: 12pt;
+}
+
+.central h1 {
+	font-size: 22pt;
+	font-weight: bold;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 22pt;
+}
+
+.central h2 {
+	font-size: 18pt;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18pt;
+	}
+	
+.central h3 {
+	font-size: 15pt;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 25pt;
+}
+
+.central h4 {
+	font-size: 12pt;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 25pt;
+}
+
+.central p {
+	font-size: 12pt;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 200;
+	line-height: 12pt;
+}
+
+.central li {
+	font-size: 12pt;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 200;
+	line-height: 14pt;
+}
+
+/* unvisited link */
+.central a:link {
+    color: #6030CC;
+}
+
+/* visited link */
+.central a:visited {
+    color: #6000AA;
+}
+
+/* mouse over link */
+.central a:hover {
+    color: #0000FF;
+}
+
+/* selected link */
+.central a:active {
+    color: #0000FF;
+}
+
+.content {
+  flex: 1 0 auto; /* Ensures content takes up available space but doesn't shrink */
+}
+
+/* The margins for the actual text blocks*/
+.text {
+	display: block;
+	/* overflow: auto; */
+	margin-left: 5%;
+	margin-right: 15%;
+	/* height: 100% */
+}
+
+/* For the home page: a left column for text and a right column for an image */
+.left-column {
+	position: relative;
+	width: 60%;
+	float: left;
+ overflow: hidden;
+}
+
+.right-column {
+	position: relative;
+	width: 40%;
+	float: right;
+}
+
+/* Responsive: if the screen is less than 1000px wide, topname and topnav stack. central moves along. The image becomes a slightly larger portion of the screen.*/
+@media only screen and (max-width: 1000px) {
+ .header {
+    padding-bottom: 0pt;
+ }
+ 
+  .topname {   
+    width: 100%;
+  }
+  
+	.topnav {
+		width: 100%;
+		transform: translate(0,0);
+	}
+	
+	.central {
+		top: 72pt;
+	}
+	
+	.right-column,.left-column{
+		width: 50%;
+	}
+}
+
+/* Responsive: if the screen is less than 600px wide, the right-column and left-column for pictures get stacked. Topname and footer get hidden.*/
+@media only screen and (max-width: 600px) {
+ .header{
+  padding: 0pt;
+ }
+ 
+ .footer{
+  display: none;
+ }
+ 
+ .topname{
+  display: none;
+ }
+ 
+ .central{
+  top: 38pt;
+  bottom: 8pt;
+  padding-top: 30pt;
+ }
+ 
+ .central h1{
+  font-size: 18pt;
+  line-height: 18pt;
+  font-weight: 400;
+ }
+ 
+ .central p,.central li{
+  font-weight: 300;
+ }
+ 
+ .right-column,.left-column{
+		width: 100%;
+  height: auto;
+	}
+}
+
+/*Responsive: if the screen is less than 600px wide and in portrait mode, the margins get smaller*/
+@media only screen and (max-width: 600px ) and (orientation: portrait) {
+ 
+  .central{
+  margin-left: 10pt;
+  margin-right: 10pt;
+  }
+  
+  .text{
+   margin-right: 0pt;
+  }
+}

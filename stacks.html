@@ -1,306 +1,238 @@
 ---
+layout: default
 title: "Stacks"
 ---
-<!DOCTYPE html>
-<html lang="en">
-	<head>
 
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'>
-			MathJax.Hub.Config({ 
-				tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-				TeX: {
-					Macros: {
-					R: "{\\mathbb{R}}",
-					}
-				}
-			}); 
-		</script>
+<h1>
+	Reading group &ldquo;Intersection theory on stacks&rdquo;
+</h1>
+					
+<div class="text">
+				
+	<p>
+		<div>Between July 2020 and January 2021, I organised an online reading group on intersection theory on stacks, with a weekly session on Mondays from 10:30 to 12:00 (Bonn local time, GMT+1). The summer leg of this reading group was aimed at defining algebraic stacks. It covered preliminaries on category theory and algebraic geometry, Vistoli's <a href="http://homepage.sns.it/vistoli/descent.pdf">Notes on Grothendieck topologies, fibered categories and descent theory</a>, and material from Olsson's book <a href="https://doi.org/10.1365/s13291-017-0172-7">Algebraic Spaces and Stacks</a> and Canonaco's <a href="https://www1.mat.uniroma1.it/ricerca/rendiconti/ARCHIVIO/2017(1)/1-169.pdf">Lectures on algebraic stacks</a>.</div>
+		<div>Half October, we started the autumn leg, focusing on intersection theory. The main focus was on intersection theory on schemes, mostly following Fulton's <a href="https://link.springer.com/book/10.1007%2F978-1-4612-1700-8">Intersection Theory</a>. We also consider the theory on stacks, mostly following Vistoli's <a href="https://link.springer.com/article/10.1007/BF01388892">Intersection theory on algebraic stacks and on their moduli spaces</a>. The final few lectures, in January, concerned the construction of virtual fundamental classes, using Battistella-Carocci-Manolache's <a href="http://dx.doi.org/10.3842/SIGMA.2020.026">Virtual Classes for the Working Mathematician</a> as a guide.</div>
+		<div>Talks and recordings can be found <a href="https://bbb.mpim-bonn.mpg.de/b/rei-xh2-kg6">here</a>, but are only accessible with a password.</div>
+	</p>
+				
+	<h3>
+		Talks and abstracts
+	</h3>
+				
+	<p>
+		<div style="font-weight: 400">Applications of virtual fundamental classes to enumerative geometry</div>
+		<div>January 25th, 2021</div>
+		Speaker: <a href="http://pub.math.leidenuniv.nl/~schwarzrm/">Rosa Schwarz</a>
+	</p>
+				
+	<p>
+		The aim of this talk is to show why understanding the construction of a virtual fundamental class is useful: firstly we do this via computing these in some examples of moduli spaces of stable maps and secondly by linking these classes to Gromov-Witten invariants and thus to certain problems in enumerative geometry. I will start with a recap from the summer (17th August), when moduli spaces of stable maps were introduced, giving explicit examples along the way. Then I will follow the [BCM]-article that we have been studying to develop an obstruction theory and thus construct virtual classes for these spaces. I will end with a discussion of Gromov-Witten invariants.
+	</p>
+				
+	<p>
+		<div style="font-weight: 400">Properties of obstruction theories and virtual classes</div>
+		<div>January 18th, 2021</div>
+		Speaker: Reinier Kramer
+	</p>
+					
+	<p>
+		After a recap of last week's constructions of perfect obstruction theories and virtual fundamental classes, I will discuss their properties with respect to deformation, and construct virtual pullbacks, which are bivariant classes. Then I will discuss the behaviour of virtual classes under pushforwards and give computational examples.
+	</p>
+				
+	<p>
+		<div style="font-weight: 400">Defining perfect obstruction theories and virtual fundamental classes</div>
+		<div>January 11th, 2021</div>
+		Speaker: <a href="https://guests.mpim-bonn.mpg.de/kcnitin/">Nitin Chidambaram</a>
+	</p>
+				
+	<p>
+		I will talk about obstruction bundles and use them to give a preliminary definition of virtual fundamental classes. We will use this notion to compute the virtual fundamental class explicitly in some examples. Then, we will define virtual fundamental classes more generally as in Behrend-Fantechi using the notion of perfect obstruction theories. 
+	</p>
+				
+	<p>	
+		<div style="font-weight: 400">Bivariant intersection theory of stacks</div>
+		<div>December 21st, 2020</div>
+		Speaker: <a href="https://www.universiteitleiden.nl/en/staffmembers/pim-spelier#tab-1">Pim Spelier</a>
+	</p>
+				
+	<p>
+		Two weeks ago, we had a talk on Chow groups of stacks. Last week, we had a talk on bivariant intersection theory on schemes, i.e. operational Chow groups and Chow rings. This week, we will combine these two techniques to talk about bivariant intersection theory on stacks, where everything behaves much the same way, with a few subtleties. We will also compare the rational (bivariant) intersection theory on a stack with that of a moduli space. I will give many examples, to hopefully help develop some intuition about all these things.
+	</p>
 
-
-		<title>RK - Stacks</title>
-		<link rel="icon" href="{{ site.baseurl }}/Images/RK.png">
-		
-		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/webstyle.css">
-		
-		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<STYLE>
-			<!--
-			A{text-decoration:none}
-			-->
-		</STYLE>
-	</head>
-  
-  
-    <body>
-      
-		<!--Navigation bar-->
-			<div id="nav-placeholder">
-
-			</div>
-
-			<script>
-				$(function(){
-				$("#nav-placeholder").load("{{ site.baseurl }}/menu/");
-				});
-			</script>
-		<!--end of Navigation bar-->
-
-		<div class="central">
+	<p>
+		<div style="font-weight: 400">Bivariant intersection theory</div>
+		<div>December 14th, 2020</div>
+		Speaker: <a href="https://guests.mpim-bonn.mpg.de/cjwh/">Campbell Wheeler</a>
+	</p>
 			
-			<div class="content">
-
-				<h1>
-					Reading group &ldquo;Intersection theory on stacks&rdquo;
-				</h1>
+	<p>
+		We will see how to generalise the notion of Gysin homomorphisms, which will define bivariant class groups. These will give us access to a unified framework to discuss both cohomology and homology. We will see that they come with many natural operations. We will also see natural spaces that Chern classes live in and discuss Poincar&eacute; duality as well as discussing how some of the theorems we previously proved generalise to bivariant class groups.
+	</p>
+				
+	<p>
+		<div style="font-weight: 400">Defining intersection theory on stacks</div>
+		<div>December 7th, 2020</div>
+		Speaker: Reinier Kramer
+	</p>
 					
-				<div class="text">
+	<p>
+		Using the machinery of both the summer and the fall parts of this reading group, I will define intersection theory on (Deligne-Mumford) stacks, using Vistoli's paper. I will commence by developing structural properties of stacks, such as the degree of a morphism. Furthermore, I will define a weak notion of moduli space for DM stacks, and go on to define intersection theory on stacks and prove naturality properties.
+	</p>
 				
-					<p>
-						<div>Between July 2020 and January 2021, I organised an online reading group on intersection theory on stacks, with a weekly session on Mondays from 10:30 to 12:00 (Bonn local time, GMT+1). The summer leg of this reading group was aimed at defining algebraic stacks. It covered preliminaries on category theory and algebraic geometry, Vistoli's <a href="http://homepage.sns.it/vistoli/descent.pdf">Notes on Grothendieck topologies, fibered categories and descent theory</a>, and material from Olsson's book <a href="https://doi.org/10.1365/s13291-017-0172-7">Algebraic Spaces and Stacks</a> and Canonaco's <a href="https://www1.mat.uniroma1.it/ricerca/rendiconti/ARCHIVIO/2017(1)/1-169.pdf">Lectures on algebraic stacks</a>.</div>
-						<div>Half October, we started the autumn leg, focusing on intersection theory. The main focus was on intersection theory on schemes, mostly following Fulton's <a href="https://link.springer.com/book/10.1007%2F978-1-4612-1700-8">Intersection Theory</a>. We also consider the theory on stacks, mostly following Vistoli's <a href="https://link.springer.com/article/10.1007/BF01388892">Intersection theory on algebraic stacks and on their moduli spaces</a>. The final few lectures, in January, concerned the construction of virtual fundamental classes, using Battistella-Carocci-Manolache's <a href="http://dx.doi.org/10.3842/SIGMA.2020.026">Virtual Classes for the Working Mathematician</a> as a guide.</div>
-						<div>Talks and recordings can be found <a href="https://bbb.mpim-bonn.mpg.de/b/rei-xh2-kg6">here</a>, but are only accessible with a password.</div>
-					</p>
-				
-					<h3>
-						Talks and abstracts
-					</h3>
-				
-					<p>
-						<div style="font-weight: 400">Applications of virtual fundamental classes to enumerative geometry</div>
-						<div>January 25th, 2021</div>
-						Speaker: <a href="http://pub.math.leidenuniv.nl/~schwarzrm/">Rosa Schwarz</a>
-					</p>
-				
-					<p>
-						The aim of this talk is to show why understanding the construction of a virtual fundamental class is useful: firstly we do this via computing these in some examples of moduli spaces of stable maps and secondly by linking these classes to Gromov-Witten invariants and thus to certain problems in enumerative geometry. I will start with a recap from the summer (17th August), when moduli spaces of stable maps were introduced, giving explicit examples along the way. Then I will follow the [BCM]-article that we have been studying to develop an obstruction theory and thus construct virtual classes for these spaces. I will end with a discussion of Gromov-Witten invariants.
-					</p>
-				
-					<p>
-						<div style="font-weight: 400">Properties of obstruction theories and virtual classes</div>
-						<div>January 18th, 2021</div>
-					Speaker: Reinier Kramer
-					</p>
+	<p>
+		<div style="font-weight: 400">Excess and residual intersections</div>
+		<div>November 30th, 2020</div>
+		Speaker: <a href="https://users.mccme.ru/deviatov/">Rostislav Devyatov</a>
+	</p>
 					
-					<p>
-						After a recap of last week's constructions of perfect obstruction theories and virtual fundamental classes, I will discuss their properties with respect to deformation, and construct virtual pullbacks, which are bivariant classes. Then I will discuss the behaviour of virtual classes under pushforwards and give computational examples.
-					</p>
+	<p>
+		In general, the intersection of subschemes need not be connected. I will give formulas for the equivalence of one connected component in the related intersection product. Furthermore, I will consider the case where the intersection of two subschemes contains a Cartier divisor of one of the subschemes, in which case it is also possible to define a complement, called the residual intersection class. I will give examples of applying both of these techniques.
+	</p>
 				
-					<p>
-						<div style="font-weight: 400">Defining perfect obstruction theories and virtual fundamental classes</div>
-						<div>January 11th, 2021</div>
-						Speaker: <a href="https://guests.mpim-bonn.mpg.de/kcnitin/">Nitin Chidambaram</a>
-				</p>
+	<p>
+		<div style="font-weight: 400">Intersection multiplicities and Chow rings for non-singular varieties</div>
+		<div>November 23rd, 2020</div>
+		Speaker: <a href="http://pub.math.leidenuniv.nl/~schwarzrm/">Rosa Schwarz</a>
+	</p>
 				
-					<p>
-						I will talk about obstruction bundles and use them to give a preliminary definition of virtual fundamental classes. We will use this notion to compute the virtual fundamental class explicitly in some examples. Then, we will define virtual fundamental classes more generally as in Behrend-Fantechi using the notion of perfect obstruction theories. 
-					</p>
+	<p>
+		Last week, the intersection product was defined using the theory of cones. In the first past of this talk, we will show that under mild conditions, we can compute intersection multiplicities, certain coefficients in the intersection products, simply as the length of a module. We also give a clear criterion for when this intersection multiplicity is one. The second part of the talk, we show that in case of a non-singular variety, the constructed intersection product will yield a multiplication that makes the Chow group into a Chow ring. After this construction and some properties that hold in the smooth case, we compute this Chow ring in several examples. Finally, we can also rephrase the perhaps familiar B&eacute;zout's theorem in this context. 
+	</p>
 				
-					<p>	
-						<div style="font-weight: 400">Bivariant intersection theory of stacks</div>
-						<div>December 21st, 2020</div>
-						Speaker: <a href="https://www.universiteitleiden.nl/en/staffmembers/pim-spelier#tab-1">Pim Spelier</a>
-					</p>
+	<p>
+		<div style="font-weight: 400">Definition and properties of intersection products</div>
+		<div>November 16th, 2020</div>
+		Speaker: <a href="https://www.universiteitleiden.nl/en/staffmembers/pim-spelier#tab-1">Pim Spelier</a>
+	</p>
 				
-					<p>
-						Two weeks ago, we had a talk on Chow groups of stacks. Last week, we had a talk on bivariant intersection theory on schemes, i.e. operational Chow groups and Chow rings. This week, we will combine these two techniques to talk about bivariant intersection theory on stacks, where everything behaves much the same way, with a few subtleties. We will also compare the rational (bivariant) intersection theory on a stack with that of a moduli space. I will give many examples, to hopefully help develop some intuition about all these things.
-					</p>
+	<p>
+		Using the machinery of cones, we will define the intersection product of a scheme and a variety. Passing through rational invariance, this defines so-called refined Gysin homomorphisms, acting on Chow groups, representing intersection with some fixed subscheme. These generalise constructions seen in previous talks, and we will see that they satisfy many nice properties.
+	</p>
+				
+	<p>
+		<div style="font-weight: 400">Cones, Segre classes, and deformation to the normal cone</div>
+		<div>November 9th, 2020</div>
+		Speaker: Alessandro Giacchetto
+	</p>
+				
+	<p>
+		I will briefly introduce the notion of cones and define Segre classes in this context. I will then discuss the deformation to the normal cone of closed subschemes. The existence of such a deformation, together with the principle of continuity that intersection products should vary nicely in families, explains the prominent role to be played by the normal cone in constructing intersection products.
+	</p>
+				
+	<p>
+		<div style="font-weight: 400">Vector bundles and Chern classes</div>
+		<div>November 2nd, 2020</div>
+		Speaker: <a href="https://guests.mpim-bonn.mpg.de/cjwh/">Campbell Wheeler</a>
+	</p>
+				
+	<p>
+		We will define higher Chern classes and Gysin homomorphisms. To do this we will first introduce Segre classes which turn out to be more natural for cones. These objects will all be important when we define higher intersections in the coming weeks.
+	</p>
+				
+	<p>
+		<div style="font-weight: 400">Divisors</div>
+		<div>October 26th, 2020</div>
+		Speaker: <a href="https://guests.mpim-bonn.mpg.de/kcnitin/">Nitin Chidambaram</a>
+	</p>
+				
+	<p>
+		I will review the notion of Cartier divisors briefly and show that we can intersect Cartier divisors with arbitrary cycles in the Chow group. Then, I will show some properties satisfied by this intersection class, and finally discuss some applications (first Chern class and the Gysin map). 
+	</p>
+				
+	<p>
+		<div style="font-weight: 400">Algebraic cycles and rational equivalence</div>
+		<div>October 19th, 2020</div>
+		Speaker: Reinier Kramer
+	</p>
+				
+	<p>
+		Following chapter 1 of Fulton's book, I will introduce cycles on schemes and define when cycles are rationally equivalent. I will show that rational equivalence behaves well with respect to certain maps between schemes and that these maps therefore descend to the cycle class groups or Chow groups.
+	</p>
 
-					<p>
-						<div style="font-weight: 400">Bivariant intersection theory</div>
-						<div>December 14th, 2020</div>
-						Speaker: <a href="https://guests.mpim-bonn.mpg.de/cjwh/">Campbell Wheeler</a>
-					</p>
-			
-					<p>
-						We will see how to generalise the notion of Gysin homomorphisms, which will define bivariant class groups. These will give us access to a unified framework to discuss both cohomology and homology. We will see that they come with many natural operations. We will also see natural spaces that Chern classes live in and discuss Poincar&eacute; duality as well as discussing how some of the theorems we previously proved generalise to bivariant class groups.
-					</p>
-				
-					<p>
-						<div style="font-weight: 400">Defining intersection theory on stacks</div>
-						<div>December 7th, 2020</div>
-						Speaker: Reinier Kramer
-					</p>
-					
-					<p>
-						Using the machinery of both the summer and the fall parts of this reading group, I will define intersection theory on (Deligne-Mumford) stacks, using Vistoli's paper. I will commence by developing structural properties of stacks, such as the degree of a morphism. Furthermore, I will define a weak notion of moduli space for DM stacks, and go on to define intersection theory on stacks and prove naturality properties.
-					</p>
-				
-					<p>
-						<div style="font-weight: 400">Excess and residual intersections</div>
-						<div>November 30th, 2020</div>
-						Speaker: <a href="https://users.mccme.ru/deviatov/">Rostislav Devyatov</a>
-					</p>
-					
-					<p>
-						In general, the intersection of subschemes need not be connected. I will give formulas for the equivalence of one connected component in the related intersection product. Furthermore, I will consider the case where the intersection of two subschemes contains a Cartier divisor of one of the subschemes, in which case it is also possible to define a complement, called the residual intersection class. I will give examples of applying both of these techniques.
-					</p>
-				
-					<p>
-						<div style="font-weight: 400">Intersection multiplicities and Chow rings for non-singular varieties</div>
-						<div>November 23rd, 2020</div>
-						Speaker: <a href="http://pub.math.leidenuniv.nl/~schwarzrm/">Rosa Schwarz</a>
-					</p>
-				
-					<p>
-						Last week, the intersection product was defined using the theory of cones. In the first past of this talk, we will show that under mild conditions, we can compute intersection multiplicities, certain coefficients in the intersection products, simply as the length of a module. We also give a clear criterion for when this intersection multiplicity is one. The second part of the talk, we show that in case of a non-singular variety, the constructed intersection product will yield a multiplication that makes the Chow group into a Chow ring. After this construction and some properties that hold in the smooth case, we compute this Chow ring in several examples. Finally, we can also rephrase the perhaps familiar B&eacute;zout's theorem in this context. 
-					</p>
-				
-					<p>
-						<div style="font-weight: 400">Definition and properties of intersection products</div>
-						<div>November 16th, 2020</div>
-						Speaker: <a href="https://www.universiteitleiden.nl/en/staffmembers/pim-spelier#tab-1">Pim Spelier</a>
-					</p>
-				
-					<p>
-						Using the machinery of cones, we will define the intersection product of a scheme and a variety. Passing through rational invariance, this defines so-called refined Gysin homomorphisms, acting on Chow groups, representing intersection with some fixed subscheme. These generalise constructions seen in previous talks, and we will see that they satisfy many nice properties.
-					</p>
-				
-					<p>
-						<div style="font-weight: 400">Cones, Segre classes, and deformation to the normal cone</div>
-						<div>November 9th, 2020</div>
-						Speaker: Alessandro Giacchetto
-					</p>
-				
-					<p>
-						I will briefly introduce the notion of cones and define Segre classes in this context. I will then discuss the deformation to the normal cone of closed subschemes. The existence of such a deformation, together with the principle of continuity that intersection products should vary nicely in families, explains the prominent role to be played by the normal cone in constructing intersection products.
-					</p>
-				
-					<p>
-						<div style="font-weight: 400">Vector bundles and Chern classes</div>
-						<div>November 2nd, 2020</div>
-						Speaker: <a href="https://guests.mpim-bonn.mpg.de/cjwh/">Campbell Wheeler</a>
-					</p>
-				
-					<p>
-						We will define higher Chern classes and Gysin homomorphisms. To do this we will first introduce Segre classes which turn out to be more natural for cones. These objects will all be important when we define higher intersections in the coming weeks.
-					</p>
-				
-					<p>
-						<div style="font-weight: 400">Divisors</div>
-						<div>October 26th, 2020</div>
-						Speaker: <a href="https://guests.mpim-bonn.mpg.de/kcnitin/">Nitin Chidambaram</a>
-					</p>
-				
-					<p>
-						I will review the notion of Cartier divisors briefly and show that we can intersect Cartier divisors with arbitrary cycles in the Chow group. Then, I will show some properties satisfied by this intersection class, and finally discuss some applications (first Chern class and the Gysin map). 
-					</p>
-				
-					<p>
-						<div style="font-weight: 400">Algebraic cycles and rational equivalence</div>
-						<div>October 19th, 2020</div>
-						Speaker: Reinier Kramer
-					</p>
-				
-					<p>
-						Following chapter 1 of Fulton's book, I will introduce cycles on schemes and define when cycles are rationally equivalent. I will show that rational equivalence behaves well with respect to certain maps between schemes and that these maps therefore descend to the cycle class groups or Chow groups.
-					</p>
 
+	<h3>
+		Summer talks, on stacks
+	</h3>
 				
-					<h3>
-						Summer talks, on stacks
-					</h3>
+	<p>
+		<div style="font-weight: 400">Moduli stacks of curves</div>
+		<div>August 17th, 2020</div>
+		Speaker: S&eacute;verin Charbonnier
+	</p>
 				
-					<p>
-						<div style="font-weight: 400">Moduli stacks of curves</div>
-						<div>August 17th, 2020</div>
-						Speaker: S&eacute;verin Charbonnier
-					</p>
+	<p>
+		Using the machinery exposed in the previous talks, we will discuss the example of the moduli stacks of stable curves. We will show that it is an algebraic Deligne-Mumford stack and review some of its properties (irreducibility, properness). Last, we will briefly discuss the moduli of stable maps.
+	</p>
 				
-					<p>
-						Using the machinery exposed in the previous talks, we will discuss the example of the moduli stacks of stable curves. We will show that it is an algebraic Deligne-Mumford stack and review some of its properties (irreducibility, properness). Last, we will briefly discuss the moduli of stable maps.
-					</p>
+	<p>
+		<div style="font-weight: 400">Algebraic spaces and algebraic stacks</div>
+		<div>August 10th, 2020</div>
+		Speaker: <a href="https://sites.google.com/view/praphulla-koushik">Praphulla Koushik</a>
+	</p>
 				
-					<p>
-						<div style="font-weight: 400">Algebraic spaces and algebraic stacks</div>
-						<div>August 10th, 2020</div>
-						Speaker: <a href="https://sites.google.com/view/praphulla-koushik">Praphulla Koushik</a>
-					</p>
+	<p>
+		In this talk, after recalling the notion of a stack over an arbitrary site, I will introduce the notions of an algebraic space, an algebraic stack and a Deligne-Mumford stack. I will then introduce some examples and properties of these &ldquo;generalized schemes&rdquo;.
+	</p>
 				
-					<p>
-						In this talk, after recalling the notion of a stack over an arbitrary site, I will introduce the notions of an algebraic space, an algebraic stack and a Deligne-Mumford stack. I will then introduce some examples and properties of these &ldquo;generalized schemes&rdquo;.
-					</p>
+	<p>
+		<div style="font-weight: 400">Definition and examples of stacks</div>
+		<div>August 3rd, 2020</div>
+		Speaker: <a href="https://guests.mpim-bonn.mpg.de/cjwh/">Campbell Wheeler</a>
+	</p>
 				
-					<p>
-						<div style="font-weight: 400">Definition and examples of stacks</div>
-						<div>August 3rd, 2020</div>
-						Speaker: <a href="https://guests.mpim-bonn.mpg.de/cjwh/">Campbell Wheeler</a>
-					</p>
+	<p>
+		As motivation, we will start by considering the category of continuous functions and illustrate some gluing properties that make it a stack over the category of topological spaces. We will then give the definition of a stack and explore some other examples of stacks coming from algebraic geometry.
+	</p>
 				
-					<p>
-						As motivation, we will start by considering the category of continuous functions and illustrate some gluing properties that make it a stack over the category of topological spaces. We will then give the definition of a stack and explore some other examples of stacks coming from algebraic geometry.
-					</p>
+	<p>
+		<div style="font-weight: 400">Fibered categories (Part 2/2)</div>
+		<div>July 27th, 2020</div>
+		Speaker: Alessandro Giacchetto
+	</p>
 				
-					<p>
-						<div style="font-weight: 400">Fibered categories (Part 2/2)</div>
-						<div>July 27th, 2020</div>
-						Speaker: Alessandro Giacchetto
-					</p>
-				
-					<p>
-						I will briefly recall the notion of fibered categories, and give the illustrative example of elliptic curves. I will then present some important results (foremost is Yoneda&rsquo;s lemma for fibered categories), and conclude with a discussion of equivariant objects in a fibered category.
-					</p>
+	<p>
+		I will briefly recall the notion of fibered categories, and give the illustrative example of elliptic curves. I will then present some important results (foremost is Yoneda&rsquo;s lemma for fibered categories), and conclude with a discussion of equivariant objects in a fibered category.
+	</p>
 
-					<p>
-						<div style="font-weight: 400">Fibered categories (Part 1/2)</div>
-						<div>July 20th, 2020</div>
-						Speaker: <a href="https://sites.google.com/view/praphulla-koushik">Praphulla Koushik</a>
-					</p>
+	<p>
+		<div style="font-weight: 400">Fibered categories (Part 1/2)</div>
+		<div>July 20th, 2020</div>
+		Speaker: <a href="https://sites.google.com/view/praphulla-koushik">Praphulla Koushik</a>
+	</p>
 				
-					<p>
-						In this talk, I will first introduce the notions of fibered categories over a category, pseudo-functors over a category and then give a correspondence between &ldquo;fibered categories over a category C&rdquo; and pseudo-functors over C. I will then give examples of fibered categories, in particular, the example of fibered category of quasi-coherent sheaves on Sch/S. I will then talk about special type of fibered categories, namely categories fibered in groupoids and categories fibered in sets. This is based on sections 3.1-3.4 of Vistoli's notes.
-					</p>
+	<p>
+		In this talk, I will first introduce the notions of fibered categories over a category, pseudo-functors over a category and then give a correspondence between &ldquo;fibered categories over a category C&rdquo; and pseudo-functors over C. I will then give examples of fibered categories, in particular, the example of fibered category of quasi-coherent sheaves on Sch/S. I will then talk about special type of fibered categories, namely categories fibered in groupoids and categories fibered in sets. This is based on sections 3.1-3.4 of Vistoli's notes.
+	</p>
 				
-					<p>
-						<div style="font-weight: 400">Sites and sheaves</div>
-						<div> July 13th, 2020</div>
-						Speaker: Reinier Kramer
-					</p>
+	<p>
+		<div style="font-weight: 400">Sites and sheaves</div>
+		<div> July 13th, 2020</div>
+		Speaker: Reinier Kramer
+	</p>
 				
-					<p>
-						I will define sites, i.e. categories with a Grothendieck topology on them. I will give several examples of sites of topological spaces and of schemes. Sites are the right categorical context for sheaf theory, and I will explain how. Finally, I will sketch a proof of Grothendieck's result that representable functors are sheaves in the fpqc topology - and hence also in the fppf and &eacute;tale topology.
-						This is mostly based on Vistoli's notes, section 2.3. 
-					</p>
+	<p>
+		I will define sites, i.e. categories with a Grothendieck topology on them. I will give several examples of sites of topological spaces and of schemes. Sites are the right categorical context for sheaf theory, and I will explain how. Finally, I will sketch a proof of Grothendieck's result that representable functors are sheaves in the fpqc topology - and hence also in the fppf and &eacute;tale topology.
+		This is mostly based on Vistoli's notes, section 2.3. 
+	</p>
 				
-					<p>
-						<div style="font-weight: 400">Recap of scheme theory</div>
-						<div> July 9th, 2020</div>
-						Speaker: Reinier Kramer
-					</p>
+	<p>
+		<div style="font-weight: 400">Recap of scheme theory</div>
+		<div> July 9th, 2020</div>
+		Speaker: Reinier Kramer
+	</p>
 
-					<p>
-						I will recall the definition of sheaves and schemes and many of their properties, such as e.g. properness, smoothness, &c. This is all material from Hartshorne, parts II and III, with less of a focus on sheaf cohomology (already treated in the previous reading group, on DT invariants), and making use of the category theory background.
-					</p>
+	<p>
+		I will recall the definition of sheaves and schemes and many of their properties, such as e.g. properness, smoothness, &c. This is all material from Hartshorne, parts II and III, with less of a focus on sheaf cohomology (already treated in the previous reading group, on DT invariants), and making use of the category theory background.
+	</p>
 				
-					<p>
-						<div style="font-weight: 400">Category background for stacks</div>
-						<div> July 6th, 2020</div>
-						Speaker: Reinier Kramer
-					</p>
+	<p>
+		<div style="font-weight: 400">Category background for stacks</div>
+		<div> July 6th, 2020</div>
+		Speaker: Reinier Kramer
+	</p>
 
-					<p>
-						I will recall often-used categorical constructions, such as the Yoneda lemma, categorical limits, and adjunctions. Most examples will be algebraic or topological in nature, with more geometric examples coming in the next session. I will also introduce group objects and discrete group objects in a category.
-					</p>
+	<p>
+		I will recall often-used categorical constructions, such as the Yoneda lemma, categorical limits, and adjunctions. Most examples will be algebraic or topological in nature, with more geometric examples coming in the next session. I will also introduce group objects and discrete group objects in a category.
+	</p>
 
-				</div>
-			
-			</div>
-	
-		<!--Footer-->
-		    <div id="footer-placeholder">
-
-		    </div>
-
-		    <script>
-				$(function(){
-				$("#footer-placeholder").load("{{ site.baseurl }}/footer/");
-				 });
-		    </script>
-		<!--end of Footer-->
-
-		</div>
-		
-    </body>
-</html>
+</div>

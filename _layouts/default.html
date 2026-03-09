@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'>
+			MathJax.Hub.Config({ 
+				tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+				TeX: {
+					Macros: {
+					R: "{\\mathbb{R}}",
+					}
+				}
+			}); 
+		</script>
+
+
+		<title>RK - APM</title>
+		<link rel="icon" href="{{ site.baseurl }}/Images/RK.png">
+		
+		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/webstyle.css">
+		
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<STYLE>
+			<!--
+			A{text-decoration:none}
+			-->
+		</STYLE>
+	</head>
+  
+  
+    <body>
+      
+		{% include menu.html %}
+
+		<div class="central">
+				
+			<div class="content">
+				
+				{{ content }}
+			
+			</div>
+
+		</div>
+
+		{% include footer.html %}
+		
+    </body>
+</html>

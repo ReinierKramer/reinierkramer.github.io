@@ -11,7 +11,7 @@
 
 /* The header container */
  .header {
-	position: sticky;
+	position: fixed;
 	top: 0;
 	width: 100%;
 	clear: both;
@@ -58,17 +58,70 @@
     color: #66CC00 !important; 
 }
 
-/* My name on the left */ 
-.topname {
+ /* The sidebar container */
+ .sidebar {
+ 	position: fixed;
+ 	left: 0;
+	max-width: 200pt;
+	min-width: 100pt;
+	height: 100%;
+	clear: both;
+	padding: 0pt 0pt 5pt 5pt;
+	overflow: hidden;
+	background-color: #FFFFFF;
 	display: block;
-	position: relative;
+	z-index: 10;
+ }
+
+ /* My name on the left */ 
+.name {
+	display: block;
+	position: static;
   	overflow: hidden;
-	width: 25%;
-	float: left;
+	height: 30pt;
+	width: 100%;
 	font-family: "Stempel Garamond LT Pro", 'Helvetica', 'Inter', sans-serif;
-	font-size: 21pt;
+	font-size: 24pt;
 	font-weight: 400;
-	line-height: 21pt;
+	line-height: 24pt;
+	padding-top: 12pt;
+	margin-bottom: 70pt;
+}
+
+ /* The side navbar */
+
+.nav {
+	position: absolute;
+	width: 100pt;
+	display: block;
+  	top: 50%;
+  	transform: translate(0, -50%);
+	padding-left: 8pt;
+	text-align: left;
+	font-size: 17pt;
+	line-height: 20pt;
+}
+
+/* Navbar links */
+.nav a {
+  color: #CC0000;
+  padding: 10pt 12pt;
+  text-decoration: none;
+}
+
+/* Navbar links - change colour when visited */
+.nav a:visited {
+  color: #E67300;
+}
+
+/* Navbar links - change colour on hover */
+.nav a:hover {
+  color: #990000;
+}
+
+/* Navbar links - change colour for the current page */
+.nav a.active {
+    color: #66CC00 !important; 
 }
 
 /* The footer container */
@@ -89,16 +142,14 @@
 	line-height: 12pt;
 }
 
-
 /* The central container*/
 .central {
 	flex: 1 0 auto; /* Pushes the footer down if content is short */
-	margin-top: 20pt;
 	bottom: 0pt;
 	display: flex;
 	flex-direction: column;
-	overflow-y: auto;
-	margin-left: 10%;
+/*	margin-top: 50pt; */
+	margin-left: 200pt;
 	margin-right: 10pt;
  	overflow: auto;
 	clear: both;
@@ -133,11 +184,6 @@
 	line-height: 25pt;
 }
 
-.central p {
-	font-size: 12pt;
-	line-height: 12pt;
-}
-
 .central li {
 	font-size: 12pt;
 	line-height: 14pt;
@@ -163,68 +209,80 @@
     color: #0000FF;
 }
 
-.content {
-  flex: 1 0 auto; /* Ensures content takes up available space but doesn't shrink */
-}
-
 /* The margins for the actual text blocks*/
 .text {
 	display: block;
 	/* overflow: auto; */
 	margin-left: 5%;
-	margin-right: 15%;
+	margin-right: 10%;
+	max-width: 700pt;
 	/* height: 100% */
 }
 
-/* For the home page: a left column for text and a right column for an image */
-.left-column {
-	position: relative;
-	width: 60%;
-	float: left;
-	overflow: hidden;
+.text p {
+	margin-left: 1rem;
 }
 
+/* For the home page: a right column for an image */
 .right-column {
 	position: relative;
+	right:0;
+	top: 0;
+	padding-left: 6pt;
+	padding-bottom: 6pt;
 	width: 40%;
 	float: right;
 }
 
-/* Responsive: if the screen is less than 900px wide, topname and topnav stack. central moves along. The image becomes a slightly larger portion of the screen.*/
-@media only screen and (max-width: 900px) {
-	.header {
-		padding-bottom: 0pt;
+/* Responsive: if the screen is more than 600px wide, the header is hidden.*/
+
+@media only screen and (min-width: 600px) {
+	.header{
+		display: none;
 	}
- 
-	.topname {   
-    	width: 100%;
-	}
-  
-	.topnav {
-		width: 100%;
-		transform: translate(0,0);
-	}
-	
-	.central {
-		top: 72pt;
-	}
-	
-	.right-column,.left-column{
+}
+
+/* Responsive: if the screen is less than 1000px wide, the image becomes a slightly larger portion of the screen.*/
+
+@media only screen and (max-width: 1000px) {
+	.right-column {
 		width: 50%;
 	}
 }
 
-/* Responsive: if the screen is less than 600px wide, the right-column and left-column for pictures get stacked. Topname and footer get hidden.*/
+/* Responsive: if the screen is less than 800px wide, name and footer get hidden. Margins become smaller. The image becomes a slightly larger portion of the screen.*/
+@media only screen and (max-width: 800px) {
+ 
+	.name {   
+    	display: none;
+	}
+	
+	.central{
+		margin-left: 110pt;
+		bottom: 8pt;
+	}
+
+	.text {
+	margin-left: 3%;
+	}
+
+	.footer {
+		display: none;
+	}
+
+	.right-column {
+		width: 60%;
+	}
+}
+
+/* Responsive: if the screen is less than 600px wide, the right-column and left-column for pictures get stacked. The sidebar is exchanged for a topbar */
+
 @media only screen and (max-width: 600px) {
 	.header{
  		padding: 0pt;
 	}
- 
-	.footer{
-		display: none;
-	}
- 
-	.topname{
+
+	.sidebar{
 		display: none;
 	}
  
@@ -240,7 +298,7 @@
 		font-weight: 400;
 	}
  
-	.right-column,.left-column{
+	.right-column {
 		width: 100%;
   		height: auto;
 	}

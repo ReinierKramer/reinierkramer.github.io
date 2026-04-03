@@ -1,14 +1,32 @@
-<nav>
-	<div class="header">
-		<div class="topname">
-		    <a href="{{ site.baseurl }}/name/" style="color:#000000; margin-left: 10pt">Reinier</a> <a href="{{ site.baseurl }}/home/" style="color:#000000;">Kramer</a>
-		</div>
-		<div class="topnav">
+<nav class="header">
+	<div class="topnav">
+		<a href="{{ site.baseurl }}/home/" class="{% if page.url contains '/home' %}active{% endif %}">Home</a>
+		<a href="{{ site.baseurl }}/research/" class="{% if page.url contains '/research' %}active{% endif %}">Research</a>
+		<a href="{{ site.baseurl }}/events/" class="{% if page.url contains '/events' %}active{% endif %}">Events</a>
+		<a href="{{ site.baseurl }}/papers/" class="{% if page.url contains '/papers' %}active{% endif %}">Papers</a>
+		<a href="{{ site.baseurl }}/teaching/" class="{% if page.url contains '/teaching' %}active{% endif %}">Teaching</a>
+	</div>
+</nav>
+
+<nav class="sidebar">
+	<div class="name">
+		<a href="{{ site.baseurl }}/name/" style="color:#000000; margin-left: 10pt">Reinier</a> <a href="{{ site.baseurl }}/home/" style="color:#000000;">Kramer</a>
+	</div>
+	<div class="nav">
+		<p>
 			<a href="{{ site.baseurl }}/home/" class="{% if page.url contains '/home' %}active{% endif %}">Home</a>
+		</p>
+		<p>
 			<a href="{{ site.baseurl }}/research/" class="{% if page.url contains '/research' %}active{% endif %}">Research</a>
+		</p>
+		<p>
 			<a href="{{ site.baseurl }}/events/" class="{% if page.url contains '/events' %}active{% endif %}">Events</a>
+		</p>
+		<p>
 			<a href="{{ site.baseurl }}/papers/" class="{% if page.url contains '/papers' %}active{% endif %}">Papers</a>
+		</p>
+		<p>
 			<a href="{{ site.baseurl }}/teaching/" class="{% if page.url contains '/teaching' %}active{% endif %}">Teaching</a>
-		</div>
+		</p>
 	</div>
 </nav>
